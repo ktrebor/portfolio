@@ -10,9 +10,7 @@ function Navbar() {
   }
 
   useEffect(() => {
-    const handleResize = () => {
-      setWindowWidth(window.innerWidth)
-    }
+    const handleResize = () => setWindowWidth(window.innerWidth)
 
     window.addEventListener('resize', handleResize)
 
@@ -22,34 +20,38 @@ function Navbar() {
   }, [])
 
   return (
-    <nav className="navbar">
-      <div className="navbar-logo">
-        <img src="/react.svg" alt="Logo" />
-      </div>
-      
-      {windowWidth <= 768 ? 
-      <div className="navbar-toggle" onClick={toggleMenu}>
-        <span className="navbar-toggle-icon">&#9776;</span>
-      </div>
-      : 
-        <div className="navbar-links">
-          <a href="#">About</a>
-          <a href="#">Projects</a>
-          <a href="#">Contact</a>
+    <header>
+      <nav className="navbar">
+        <div className="navbar-logo">
+          <a href="/">
+            <img src="/react.svg" alt="Logo" />
+          </a>
+        </div>
+        
+        {windowWidth <= 768 ? 
+        <div className="navbar-toggle" onClick={toggleMenu}>
+          <span className="navbar-toggle-icon">&#9776;</span>
+        </div>
+        : 
+          <div className="navbar-links">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+            <a href="#">Resume</a>
+          </div>
+        }
+        
+        {showMenu && 
+        <div className="navbar-menu">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
           <a href="#">Resume</a>
         </div>
-      }
-
-      {showMenu && 
-      <div className="navbar-menu">
-        <a href="#">About</a>
-        <a href="#">Projects</a>
-        <a href="#">Contact</a>
-        <a href="#">Resume</a>
-      </div>
-      }
-    </nav>
-  );
+        }
+      </nav>
+    </header>
+  )
 }
 
 export default Navbar;
