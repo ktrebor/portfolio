@@ -1,0 +1,39 @@
+.about {
+    padding-top: 10vh; /* be aware of this, it might affect you later on */
+}
+
+.inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.inner ul li {
+    position: relative;
+    font-family: 'Source Code Pro', monospace, sans-serif;
+    margin-left: 1rem;
+    list-style-type: disc;
+}
+
+.about-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: .7em;
+}
+
+.profile-pic {
+    width: 100%;
+    align-self: center;
+    padding: var(--vertical-large-padding) var(--horizontal-large-padding);
+}
+
+@media screen and (min-width: 768px) {
+    .inner {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .about {
+        padding-top: 0;
+    }
+ }

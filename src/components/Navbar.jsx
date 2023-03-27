@@ -9,15 +9,21 @@ function Navbar() {
     setShowMenu(!showMenu)
   }
 
+  const closeMenu = () => {
+    setShowMenu(false)
+  }
+
   useEffect(() => {
     const handleResize = () => setWindowWidth(window.innerWidth)
+    
+    windowWidth < 768 ? closeMenu() : ""
 
     window.addEventListener('resize', handleResize)
 
     return () => {
       window.removeEventListener('resize', handleResize)
     }
-  }, [])
+  }, [windowWidth])
 
   return (
     <header>
@@ -42,7 +48,7 @@ function Navbar() {
         }
         
         {showMenu && 
-        <div className="navbar-menu">
+        <div className="navbar-menu" onClick={closeMenu}>
           <a href="#about">About</a>
           <a href="#projects">Projects</a>
           <a href="#contact">Contact</a>

@@ -1,10 +1,8 @@
 .hero {
-    padding: 0 var(--horizontal-medium-padding);
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: .5em;
+    height: 100vh; 
 }
 
 .hero-hi {
@@ -13,22 +11,8 @@
     font-family: 'Source Code Pro', monospace, sans-serif;
 }
 
-h2 {
-    color: var(--dirty-white);
-    font-size: var(--xl-fs);
-    font-family: 'Inter', sans-serif;
-}
-
-h3 {
-    color: var(--grey);
-    font-size: var(--l-fs);
-}
-
 .short-intro {
-    color: var(--grey);
-    font-size: var(--s-fs);
-    line-height: 1.5;
-    margin-top: 1em;
+    margin: 1em 0;
 }
 
 .call-to-action {
@@ -49,26 +33,8 @@ h3 {
     background-color: var(--green-transparent);
 }
 
-@media screen and (min-width: 768px) {
-   .hero {
-    padding: var(--vertical-medium-padding) 10em;    
-   } 
-   
+@media screen and (min-width: 768px) {   
    .hero-hi {
-    font-size: var(--s-fs);
+        font-size: var(--s-fs);
    }
-   
-   h2 {
-    font-size: var(--xxl-fs);
-   }
-
-   h3 {
-    font-size: var(--xl-fs);
-   }
-}
-
-@media screen and (min-width: 1200px) {
-    .hero {
-    padding: var(--vertical-medium-padding) 25em;
-    }
 }

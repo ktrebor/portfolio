@@ -36,3 +36,59 @@
     --xl-fs: 2.5rem;
     --xxl-fs: 4rem;
 }
+
+h2 {
+    color: var(--dirty-white);
+    font-size: var(--xl-fs);
+    font-family: 'Inter', sans-serif;
+}
+
+h3 {
+    color: var(--grey);
+    font-size: var(--l-fs);
+}
+
+section {
+    padding: var(--vertical-medium-padding) var(--horizontal-medium-padding);
+}
+
+p {
+    font-size: var(--s-fs);
+    color: var(--grey);
+    line-height: 1.5;
+    padding: var(--vertical-small-padding) 0;
+}
+
+li {
+    color: var(--green);
+    list-style-type: none;
+}
+
+a {
+    color: var(--green);
+    text-decoration: none;
+}
+
+span {
+    color: var(--green);
+}
+
+@media screen and (min-width: 768px) {
+    section {
+        padding: var(--vertical-medium-padding) 10em;    
+    } 
+       
+   h2 {
+    font-size: var(--xxl-fs);
+   }
+
+   h3 {
+    font-size: var(--xl-fs);
+   }
+ }
+ 
+ @media screen and (min-width: 1200px) {
+     section {
+        padding: var(--vertical-medium-padding) 25em;
+     }
+ }
