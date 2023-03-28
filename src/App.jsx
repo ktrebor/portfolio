@@ -2,6 +2,7 @@ import React from "react"
 import Navbar from "./components/Navbar"
 import Hero from "./components/Hero"
 import About from "./components/About"
+import SideInfo from "./components/SideInfo"
 import './App.css'
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       <Navbar />
       <Hero />
       <About />
+      <SideInfo />
     </div>
   )
 }
