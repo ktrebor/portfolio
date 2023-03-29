@@ -43,6 +43,7 @@
   font-size: 1.2rem;
   margin: 10px 0;
   font-family: 'Source Code Pro', monospace, sans-serif;
+  transition: .5s ease;
 }
 
 .navbar-menu a:hover {
@@ -53,6 +54,18 @@
   font-size: 2rem;
 }
 
+.resume-link {
+  border: 2px solid var(--green);
+  border-radius: 4px;
+  color: var(--green)!important;
+  padding: var(--vertical-small-padding) var(--horizontal-small-padding);
+  transition: .5s ease;
+}
+
+.resume-link:hover {
+  background-color: var(--green-transparent);
+}
+
 @media screen and (min-width: 768px) {
   .navbar {
     padding: var(--vertical-medium-padding) var(--horizontal-large-padding);
@@ -61,6 +74,7 @@
   .navbar-links {
     display: flex;
     flex-direction: row;
+    align-items: center;
   }
 
   .navbar-links a {
@@ -69,6 +83,7 @@
     text-decoration: none;
     font-size: 1.2rem;
     font-family: 'Source Code Pro', monospace, sans-serif;
+    transition: .5s ease;
   }
 
   .navbar-links a:hover {

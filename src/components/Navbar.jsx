@@ -30,7 +30,7 @@ function Navbar() {
       <nav className="navbar">
         <div className="navbar-logo">
           <a href="/">
-            <img src="/react.svg" alt="Logo" />
+            <img src="/ktrebor.png" alt="Logo" />
           </a>
         </div>
         
@@ -43,7 +43,7 @@ function Navbar() {
             <a href="#about">About</a>
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
-            <a href="#">Resume</a>
+            <a className="resume-link" href="#">Resume</a>
           </div>
         }
         
@@ -52,7 +52,7 @@ function Navbar() {
           <a href="#about">About</a>
           <a href="#projects">Projects</a>
           <a href="#contact">Contact</a>
-          <a href="#">Resume</a>
+          <a className="resume-link" href="#">Resume</a>
         </div>
         }
       </nav>

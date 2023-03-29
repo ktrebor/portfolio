@@ -27,10 +27,16 @@
     padding: var(--vertical-medium-padding) var(--horizontal-medium-padding);
     font-family: 'Source Code Pro', sans-serif;
     font-weight: 700;
+    transition: .5s ease;
 }
 
 .email-link:hover {
     background-color: var(--green-transparent);
+}
+
+.hero h3 {
+    padding: 0;
+    color: var(--grey);
 }
 
 @media screen and (min-width: 768px) {   
