@@ -5,7 +5,7 @@
 .inner {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
 }
 
 .inner ul li {
@@ -22,18 +22,29 @@
 }
 
 .profile-pic {
-    width: 100%;
-    align-self: center;
-    padding: var(--vertical-large-padding) var(--horizontal-large-padding);
+    width: 50%;
+    border-radius: 5px;
+    margin: var(--vertical-small-padding) var(--horizontal-small-padding);
+    transition: .5s ease-in-out;
+    flex-grow: 1;
+}
+
+.profile-pic:hover {
+    box-shadow: var(--green) 10px 10px;
+    transition: .5s ease-in-out; 
 }
 
 @media screen and (min-width: 768px) {
     .inner {
         flex-direction: row;
-        align-items: center;
     }
 
     .about {
         padding-top: 0;
+    }
+
+    .profile-pic{
+        width: 40%;
+        margin: var(--vertical-large-padding) var(--horizontal-large-padding);
     }
  }

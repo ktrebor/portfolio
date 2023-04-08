@@ -6,10 +6,11 @@ export default function About() {
         <section id="about" className="about">
             <h3>About me</h3>
             <div className="inner">
-                <div>
-                    <p>Suspendisse quis mauris ut ligula tempor feugiat et eu urna. In molestie ex felis, ornare viverra leo placerat a. Etiam iaculis nunc leo, semper blandit dui viverra nec.</p>
-                    <p>Maecenas gravida augue purus, at mollis velit facilisis quis. Etiam condimentum eros eu faucibus sagittis. Aenean odio metus, condimentum vel aliquet a, hendrerit vel ipsum</p>
-                    <p>Suspendisse luctus nisi libero, sit amet consequat lorem tempus non:</p>
+                <div className="inner-text">
+                    <p>Hi, I'm Robert and I like building things for the web. In 2016, I've started working with WordPress and later on I learned HTML and CSS. Being eager to learn more, I've started working with JavaScript.</p>
+                    <p>I've had the privilege of working at <span>an advertising agency</span>, <span>a cryptocurrency start-up</span>, <span><a href="https://www.smc.eu/en-eu" target="_blank">a manufacturer of pneumatic control devices</a></span> and <span><a href="https://www.alfleth.com/en/" target="_blank">a reseller of machine tools</a></span>.</p>
+                    <p>Currently, my main focus is delivering applications for public institutions at <span><a href="https://mindsoft.ro" target="_blank">Mindsoft</a></span>.</p>                    
+                    <p>Here are the technologies I'm working with:</p>
                     <ul className="about-list">
                         <li>JavaScript</li>
                         <li>React</li>
@@ -17,7 +18,7 @@ export default function About() {
                         <li>CSS</li>
                     </ul>
                 </div>
-                <img src="./react.svg" className="profile-pic"/>
+                <img src="./profile-pic.png" className="profile-pic"/>
             </div>
         </section>
     )

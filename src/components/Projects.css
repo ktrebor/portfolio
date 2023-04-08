@@ -1,0 +1,71 @@
+.projects {
+    padding-top: 10vh; /* be aware of this, it might affect you later on */
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+}
+
+.project-image-link {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-image-link p {
+    padding-bottom: var(--vertical-large-padding);
+}
+
+.project-image {
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+}
+
+.project-navigation {
+    align-self: center;
+    justify-self: flex-end;
+}
+
+.project-navigation button {
+    margin: 1em;
+}
+
+.project-technologies {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+.project-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-links a img {
+    width: 1.5em;
+}
+
+.project-out {
+    display: flex;
+    gap: 1em;
+}
+
+@media screen and (min-width: 768px) {
+    .projects {
+        padding-top: 10vh;
+    }
+
+    .project-card {
+        display: flex;
+        flex-direction: column;
+        height: 85vh;
+    }
+
+    .project-image {
+        width: 100%;
+    }
+ }
